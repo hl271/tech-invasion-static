@@ -1,0 +1,140 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/****   my edit  *****/
+
+/*no shadow*/
+.no-shadow
+{
+  box-shadow: 0 !important;
+  -webkit-box-shadow: 0 !important;
+}
+
+/*nav transition*/
+.sticky-navigation { 
+  border:none;
+  padding:0 !important;
+  margin-bottom:0 !important;
+  -webkit-backface-visibility:hidden;
+  top:-100px;
+  -webkit-transition:all 0.7s ease-in-out;
+  -moz-transition:all 0.7s ease-in-out;
+  transition:all 0.7s ease-in-out;
+  -webkit-box-shadow:0 0 16px 0 rgba(32,32,47,0.16);
+  -moz-box-shadow:0 0 16px 0 rgba(32,32,47,0.16);
+  box-shadow:0 0 16px 0 rgba(32,32,47,0.16)
+ }
+
+/*                                  Head   */
+ /*logo*/
+.heading-logo
+{
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  margin-top: -0.2em;
+}
+
+/*date n time*/
+.box-dt
+{
+  margin-top: 3em;
+}
+
+/*header introduction*/
+.head-text
+{
+  text-align: center;
+}
+
+.container-height
+{
+    height: 700px;
+}
+
+.btn-align
+{
+  text-align: center;
+  padding-top: 2em;
+  height: 40px;
+}
+
+.btn-align a
+{
+  height: 60px;
+}
+
+/*countdown card*/
+.countdown-card
+{
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+  width: 540px;
+  margin: 0 auto;
+  
+  margin-top: -13em;
+  padding: 1.3em;
+}
+
+.countdown-card h4
+{
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.inside-card h4
+{
+  margin-bottom: 0;
+}
+
+.inside-card p
+{
+  text-align: center;
+}
+
+/* some media query for head*/
+@media only screen and (max-width: 580px) 
+{
+  .countdown-card 
+  {
+    width: 95% !important;
+    margin-top: -8em;
+  }
+
+  .container-height
+  {
+    height: 700px;
+  }
+}
+
+/*                                  Sponsor   */
+.sponsor-style h2
+{
+  text-align: center;
+  padding: 1em;
+}
+
+.sponsor-style p
+{
+  text-align: center;
+}
+
+.sponsor-style img
+{
+  width: 15vw;
+  height: auto;
+  margin: 0 auto;
+}
