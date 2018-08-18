@@ -35,7 +35,23 @@
 </header>
 
 <body>
-  
+
+  <!--Floating login/register box  ****FOR FUN ONLY DONT TOUCH!
+  <div class="modal">
+    <div class="modal-dialog">
+
+      <div class="btn btn-register grey lighten-4">
+        <p id="google-btn">Sign in with Google</p>
+      </div>
+
+      <div id="facebook-btn" class="btn btn-register blue darken-3">
+        <p>Sign in with Facebook</p>
+      </div>
+      
+    </div>
+  </div>-->
+
+
   <div class="bg_pos">
     
     <!--Nav Bar-->
@@ -62,21 +78,37 @@
     <div class="container container-height">
       <h4 class="heading-logo">VIETCODE PROJECT</h4>
 
-      <div class="row">
-        <div class="col s6 push-s3 box-dt">
-          <div class="card-panel red lighten-4 head-text z-depth-3">
-            <span class="red-text">
-                19 August 2018  | Hanoi, Vietnam
-            </span>
-          </div>
-        </div>
-      </div>
+     
+    <div class="card-panel red lighten-4 middle-banner z-depth-3">
+      <span class="red-text">
+        09 September 2018, 12:30 PM  | Hanoi, Vietnam
+      </span>
+    </div>
 
       <h1 class="white-text head-text">Tech Invasion 2018</h1>
       
       <div class="btn-align">
-          <a class="waves-effect waves-light btn"><p>Register now!</p></a>
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><p>Register now!</p></a>
       </div>
+
+      <!--Insert Login Facebook/Google Button here!-->
+      <div id="modal1" class="modal modal-edit" style="display: none;">
+
+        <div class="modal-content">
+          <h4>Register with: </h4>
+          <div class="content-btn">  <!--Button for Facebook/Google login-->
+            <div class="waves-effect waves-light btn btn-fix">button</div>
+            <div class="waves-effect waves-light btn btn-fix">button</div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+
+        
+      </div>
+
     </div>
     
   </div>
@@ -85,30 +117,27 @@
     <div class="countdown-card z-depth-3">
       <h4>Event starts in:</h4>
       <div class="row">
-        <div class="col s2 push-s1 inside-card">
-          <h4>00</h4>
-          <p>Month</p>
-        </div>
 
-        <div class="col s2 push-s1 inside-card">
-          <h4>00</h4>
-          <p>Date</p>
+        <div class="col s3 inside-card">
+          <h4 id="day">00</h4>
+          <p>Days</p>
         </div>
         
-        <div class="col s2 push-s1 inside-card">
-          <h4>00</h4>
-          <p>Hour</p>
+        <div class="col s3 inside-card">
+          <h4 id="hour">00</h4>
+          <p>Hours</p>
         </div>
         
-        <div class="col s2 push-s1 inside-card">
-          <h4>00</h4>
-          <p>Minute</p>
+        <div class="col s3 inside-card">
+          <h4 id="minute">00</h4>
+          <p>Minutes</p>
         </div>
-        <div class="col s2 push-s1 inside-card">
-          <h4>00</h4>
-          <p>Second</p>
+        <div class="col s3 inside-card">
+          <h4 id="second">00</h4>
+          <p>Seconds</p>
         </div>
       </div>
+      <h5 id="overtime" style="text-align: center;"></h5>
     </div>
 
 
@@ -184,6 +213,9 @@
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/materialize.js"></script>
+
+  <!--Countdown Script-->
+  <script src="js/countdown.js"></script>
 
   </body>
 </html>
