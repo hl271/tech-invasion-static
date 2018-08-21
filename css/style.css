@@ -250,6 +250,16 @@ strong
   margin: 0 auto;
 }
 
+/*some media query*/
+@media only screen and (max-width: 720px)
+{
+  .schedule-table
+  {
+    width: 90%;
+  }
+}
+
+/*__*/
 
 /*_____________Footer________________________*/
 .footer-align
