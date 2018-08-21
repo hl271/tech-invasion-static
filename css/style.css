@@ -15,6 +15,15 @@
 
 /****   my edit  *****/
 
+html, h1, h2, h3, h4, h5, h6, p
+{
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+
 /*no shadow*/
 .no-shadow
 {
@@ -75,14 +84,16 @@
 .btn-align
 {
   text-align: center;
-  padding-top: 2em;
-  height: 40px;
   display: block;
+  margin: 0 auto;
+  width: 160px;
+
+  padding-top: 3em;
 }
 
 .btn-align a
 {
-  height: 60px;
+  padding: 0 16px;
 }
 
 /*countdown card*/
@@ -94,14 +105,14 @@
   width: 540px;
   margin: 0 auto;
   
-  margin-top: -13em;
+  margin-top: -14em;
   padding: 1.3em;
 }
 
 .countdown-card h4
 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 0.7em;
 }
 
 .inside-card h4
@@ -133,6 +144,83 @@
     width: 80%;
   }
 }
+
+/*______________________________About this event________________________________*/
+strong
+{
+  font-weight: 510;
+}
+
+.width-fix
+{
+  width: 68%;
+  max-width: 200%;
+}
+
+.section-heading > h3, p
+{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-heading > h3
+{
+  padding-bottom: 1em;
+}
+
+.about 
+{
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.about img
+{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-text
+{
+  margin-top: 2em;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.image2
+{
+  visibility: hidden;
+  height: 0;
+}
+/*some media query for about*/
+/*
+@media only screen and (max-width: 1431px) {.width-fix{width: 95% ;}}
+@media only screen and (max-width: 1340px) {.width-fix{width: 99%;}}
+@media only screen and (max-width: 1280px) {.width-fix{width: 102%;}}
+*/
+
+@media only screen and (max-width: 1050px) {.width-fix{width: 85%;}}
+@media only screen and (max-width: 701px)
+{
+  .about img
+  {
+  }
+
+  .image2
+  {
+    visibility: visible;
+    height: auto;
+  }
+
+  .image1
+  {
+    visibility: hidden;
+    height: 0;
+  }
+}
+/*___*/
 
 /*______________________________Sponsor________________________________*/
 .sponsor-style h2
