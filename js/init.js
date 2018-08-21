@@ -5,6 +5,8 @@
 
     $('.collapsible').collapsible();
 
+    $('.scrollspy').scrollSpy({scrollOffset: 70, activeClass: 'active'});
+
     /*----------- Navigation Visible on scroll -----------*/
 
     $(window).scroll(function() {
