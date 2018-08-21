@@ -204,10 +204,6 @@ strong
 @media only screen and (max-width: 1050px) {.width-fix{width: 85%;}}
 @media only screen and (max-width: 701px)
 {
-  .about img
-  {
-  }
-
   .image2
   {
     visibility: visible;
@@ -222,8 +218,21 @@ strong
 }
 /*___*/
 
+/*______________________________Schedule________________________________*/
+.schedule
+{
+  padding-bottom: 2em;
+}
+
+.schedule-table
+{
+  margin: 0 auto;
+  width: 60%;
+}
+
+
 /*______________________________Sponsor________________________________*/
-.sponsor-style h2
+.sponsor-style h3
 {
   text-align: center;
   padding: 1em;
@@ -239,6 +248,13 @@ strong
   width: 15vw;
   height: auto;
   margin: 0 auto;
+}
+
+
+/*_____________Footer________________________*/
+.footer-align
+{
+  text-align: justify;
 }
 
 /*____________________Floating login box___________________*/

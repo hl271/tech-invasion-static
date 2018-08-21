@@ -3,6 +3,8 @@
 
     $('.sidenav').sidenav();
 
+    $('.collapsible').collapsible();
+
     /*----------- Navigation Visible on scroll -----------*/
 
     $(window).scroll(function() {
