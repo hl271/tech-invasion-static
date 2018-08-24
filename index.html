@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
+<head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Tech Invasion</title>
@@ -34,105 +34,155 @@
       background-color: transparent;
     }
 
-    
+    a.active {
+      background-color: #0097a7
+    }
+
+    #nav-mobile a.active {
+      background-color: rgba(0, 0, 0, 0.05)
+    }
+    .info-container {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      width: 70%;
+      margin: 0 auto;
+      padding: 0.6rem;
+    }
+    .info-item {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .info-item .material-icons {
+      font-size: 2.5em;
+    }
+    .info-item .body {
+      color: #fff;
+      font-size: 0.9em;
+      text-align: center;
+    }
   </style>
 
-</header>
+</head>
 
 <body>
+  
+  <!--Nav Bar-->
+  <div class="navbar-fixed">
+    <nav class=" cyan " role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">VIETCODE</a>
 
-  <!--header-->
-  <div class="bg_pos">
-    
-    <!--Nav Bar-->
-    <div class="navbar-fixed">
-      <nav class="navbar-fixed red sticky-navigation" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">VIETCODE</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#about">Về sự kiện</a></li>    
+        <li><a href="#schedule">Chương trình</a></li> 
+        <li><a href="#sponsor">Nhà Tài Trợ</a></li> 
+        <li class="nav--ticket"></li>
+        <!--Session Feature-->
+        <!-- <li><a href="/session">Session</a></li>
+        <li class="nav--my-session"></li> -->
+        <li><a class="nav-main--profile dropdown-trigger" href="#!" data-target="dropdown1"></a></li>
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a onClick="signOut()" href="#">Đăng xuất</a></li>
+        </ul>
+      </ul>
 
-          <ul class="right hide-on-med-and-down">
-            <li class=""><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#sponsor">Sponsor</a></li>
-          </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li style="margin-bottom:0; margin-top: 20px" class="row nav-side--profile dropdown-btn" >
+          <div class="nav-side--profile_img col s3"></div>
+          <div class="nav-side--profile_name col s9 black-text"></div>
+        </li>
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#about">Về sự kiện</a></li>
+        <li><a href="#schedule">Chương trình</a></li>
+        <li><a href="#sponsor">Nhà Tài Trợ</a></li> 
+        <!--Session Feature-->
+        <!-- <li><a href="/session">Session</a></li>
+        <li class="nav--my-session"></li> -->   
+        <li class="nav--ticket"></li>
+        <ul class="nav-side--signout-btn nav-side">
+          
+        </ul>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#sponsor">Sponsor</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-        </div>
-      </nav>
-    </div>
-
-    <!--text part-->
-    <div id="home" class="container container-height scrollspy">
-      <h4 class="heading-logo">VIETCODE PROJECT</h4>
-
-     
-    <div class="card-panel white middle-banner">
-      <span class="red-text">
-        09 September 2018, 12:30 PM  | Hanoi, Vietnam
-      </span>
-    </div>
-
-      <h1 class="white-text head-text">Tech Invasion 2018</h1>
-      
-      <div class="btn-align">
-          <a class="waves-effect waves-light btn-large modal-trigger" href="#modal1">Register now!</a>
       </div>
-
-      <!--Insert Login Facebook/Google Button here!-->
-      <div id="modal1" class="modal modal-edit" style="display: none;">
-
-        <div class="modal-content">
-          <h4>Register with: </h4>
-          <div class="content-btn">  <!--Button for Facebook/Google login-->
-            <div class="waves-effect waves-light btn btn-fix">button</div>
-            <div class="waves-effect waves-light btn btn-fix">button</div>
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
-
-        
-      </div>
-
-    </div>
-    
+    </nav>
   </div>
 
-    <!--countdown card-->
-    <div class="countdown-card z-depth-3">
-      <h4>Event starts in:</h4>
-      <div class="row">
+  <!--Header-->
+  <div id="home" class="bg_pos section scrollspy">
+    
+    <!--text part-->
+    <div style="padding-top: 30px" class="container container-height">
+    
+      <h1 class="white-text head-text">Tech Invasion 2018</h1>
 
-        <div class="col s3 inside-card">
-          <h4 id="day">00</h4>
-          <p>Days</p>
-        </div>
-        
-        <div class="col s3 inside-card">
-          <h4 id="hour">00</h4>
-          <p>Hours</p>
-        </div>
-        
-        <div class="col s3 inside-card">
-          <h4 id="minute">00</h4>
-          <p>Minutes</p>
-        </div>
-        <div class="col s3 inside-card">
-          <h4 id="second">00</h4>
-          <p>Seconds</p>
+      <div class="info-container white-text z-depth-3">
+        <div class="row">
+          <div class="col s12">
+            <ul class="info-list">
+              <li>
+                <div class="info-item">
+                  <div class="valign-wrapper">
+                    <i class="material-icons">place</i> <b>Địa điểm tổ chức: </b>
+                  </div>
+                  <div class="body">Đại học Greenwich, Hà Nội, Việt Nam</div>
+                </div> 
+                
+              </li>
+              <li>
+                <div class="info-item">
+                  <div class="valign-wrapper">
+                    <i class="material-icons">timer</i> <b>Thời gian: </b>
+                  </div>
+                  <div class="body">12h30 - 17h10 (9/9/1018)</div>
+                </div>
+              </li>
+              <li>
+                <div class="info-item">
+                  <div class="valign-wrapper">
+                    <i class="material-icons">assignment</i> <b>Link đăng ký: </b>
+                  </div>
+                  <div class="body">
+                    <a href="http://bit.ly/vietcode-tech-invasion-2018">Google Form</a>
+                  </div>
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <h5 id="overtime" style="text-align: center;"></h5>
+
     </div>
+  </div>
+
+  <!--countdown card-->
+  <div class="countdown-card z-depth-3">
+    <h4>Event starts in:</h4>
+    <div class="row">
+
+      <div class="col s3 inside-card">
+        <h4 id="day">00</h4>
+        <p>Days</p>
+      </div>
+      
+      <div class="col s3 inside-card">
+        <h4 id="hour">00</h4>
+        <p>Hours</p>
+      </div>
+      
+      <div class="col s3 inside-card">
+        <h4 id="minute">00</h4>
+        <p>Minutes</p>
+      </div>
+      <div class="col s3 inside-card">
+        <h4 id="second">00</h4>
+        <p>Seconds</p>
+      </div>
+    </div>
+    <h5 id="overtime" style="text-align: center;"></h5>
+  </div>
 
 
   <!--About this event-->
@@ -145,7 +195,7 @@
 
         <div class="section-heading"> 
           <p><i class="medium material-icons" style="color: #de4d2f">insert_chart</i></p>
-          <h3>About this event</h3>
+          <h3>Về sự kiện</h3>
         </div>
 
         <img class="image1" src="img/tech_invasion_banner.PNG">
@@ -172,7 +222,7 @@
   <div id="schedule" class="container schedule scrollspy">
     <div class="section-heading"> 
       <p><i class="medium material-icons" style="color: #de4d2f">event_note</i></p>
-      <h3>Schedule</h3>
+      <h3>Lịch trình diễn ra sự kiện</h3>
 
       <ul class="collapsible schedule-table">
           <li>
@@ -235,7 +285,7 @@
   <!--Sponsor-->
   <hr>
   <div id="sponsor" class="container sponsor-style scrollspy">
-    <h3>Sponsors</h3>
+    <h3>Nhà tài trợ</h3>
     <div class="row">
       <div class="col s3">
         <p><img src="img/tecjkids.png"></p>
@@ -260,10 +310,10 @@
   </div>
 
   <!--footer-->
-  <footer class="page-footer orange">
+  <footer class="page-footer cyan darken-1">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l6 s12 m7">
           <h5 class="white-text">Vietcode Project</h5>
           <p class="grey-text text-lighten-4 footer-align">
             We are a team of high school students working on this project like it's our full time job. 
@@ -271,44 +321,26 @@
           </p>
 
         </div>
-        <div class="col l3 s12">
-          <!--
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-          -->
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="https://fb.com/vietcode.org">Facebook</a></li>
-            <!--
-            <li><a class="white-text" href="#!">Instagram</a></li>
-            <li><a class="white-text" href="#!">Twitter</a></li>
-            <li><a class="white-text" href="#!">Askfm</a></li>
-            -->
-          </ul>
+        
+        <div class="col l3 s12 m5">
+          <h5 class="white-text">Kết nối</h5>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvietcode.org%2F&tabs=timeline&width=300&height=350&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
       <!--Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>-->
-      Made by <a class="orange-text text-lighten-3" href="https://fb.com/vietcode.org">Vietcode Project</a>
+      Made by <a class="orange-text text-lighten-3" href="https://vietcode.org">Vietcode Project</a>
       </div>
     </div>
   </footer>
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/jquery-2.1.1.min.js"></script>
-  <script src="js/init.js"></script>
   <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
   <!--Countdown Script-->
   <script src="js/countdown.js"></script>

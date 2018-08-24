@@ -1,11 +1,11 @@
-(function($){
-  $(function(){
+$(document).ready(function(){
+  console.log('document ready!!!')
 
     $('.sidenav').sidenav();
 
     $('.collapsible').collapsible();
 
-    $('.scrollspy').scrollSpy({scrollOffset: 70, activeClass: 'active'});
+    $('.scrollspy').scrollSpy({scrollOffset: 200, activeClass: 'active'});
 
     /*----------- Navigation Visible on scroll -----------*/
 
@@ -31,8 +31,4 @@
     });
 
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
-
-
-  
+  });
