@@ -7,6 +7,7 @@ $(document).ready(function(){
 
     $('.scrollspy').scrollSpy({scrollOffset: 200, activeClass: 'active'});
 
+    $('.tabs').tabs();
     /*----------- Navigation Visible on scroll -----------*/
 
     $(window).scroll(function() {

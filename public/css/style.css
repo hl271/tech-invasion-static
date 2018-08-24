@@ -78,7 +78,8 @@ html, h1, h2, h3, h4, h5, h6, p
 
 .container-height
 {
-    height: 700px;
+    height: auto;
+    padding-bottom: 10rem;
 }
 
 .btn-align
@@ -105,7 +106,7 @@ html, h1, h2, h3, h4, h5, h6, p
   width: 540px;
   margin: 0 auto;
   
-  margin-top: -10em;
+  margin-top: -7em;
   padding: 1.3em;
 }
 

@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Tech Invasion</title>
 
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="img/tech_invasion.jpg">
 
   <!-- CSS - Materialize -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -41,6 +40,12 @@
     #nav-mobile a.active {
       background-color: rgba(0, 0, 0, 0.05)
     }
+
+    .nav-wrapper {
+      width: 85%;
+      margin: 0 auto;
+    }
+    /*Info container*/
     .info-container {
       border: 1px solid #eee;
       border-radius: 10px;
@@ -60,6 +65,40 @@
       font-size: 0.9em;
       text-align: center;
     }
+    .btn-signup {
+      margin: 5px;
+
+    }
+    .btn-signup.hover {
+      background-color: #880e4f
+    }
+
+    /* Schedule Table */
+    table, th, td {
+      border: 1px solid #9e9e9e;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+    
+    th {
+      background-color: #ad1457 ;
+      color: white;
+    }
+
+    td {
+      background-color: #e0f7fa
+    }
+
+    .session {
+      background-color: #006064;
+      color: #fff;
+    }
+    .other {
+      background-color: #0097a7;
+      color: white;
+    }
   </style>
 
 </head>
@@ -69,13 +108,14 @@
   <!--Nav Bar-->
   <div class="navbar-fixed">
     <nav class=" cyan " role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">VIETCODE</a>
+      <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">VIETCODE</a>
 
       <ul class="right hide-on-med-and-down">
         <li><a href="#home">Trang chủ</a></li>
         <li><a href="#about">Về sự kiện</a></li>    
-        <li><a href="#schedule">Chương trình</a></li> 
-        <li><a href="#sponsor">Nhà Tài Trợ</a></li> 
+        <li><a href="#feature">Điểm nổi bật</a></li> 
+        <li><a href="#schedule">Lịch trình</a></li> 
+        <li><a target="_blank" class="btn-signup btn pink darken-3" href="http://bit.ly/vietcode-tech-invasion-2018">Link Đăng Ký</a></li>
         <li class="nav--ticket"></li>
         <!--Session Feature-->
         <!-- <li><a href="/session">Session</a></li>
@@ -93,8 +133,9 @@
         </li>
         <li><a href="#home">Trang chủ</a></li>
         <li><a href="#about">Về sự kiện</a></li>
-        <li><a href="#schedule">Chương trình</a></li>
-        <li><a href="#sponsor">Nhà Tài Trợ</a></li> 
+        <li><a href="#feature">Điểm nổi bật</a></li>
+        <li><a href="#schedule">Lịch trình</a></li>
+        <li><a target="_blank" class="btn-signup btn pink darken-3" href="http://bit.ly/vietcode-tech-invasion-2018"><i class="material-icons white-text">assignment</i> Link Đăng Ký</a></li> 
         <!--Session Feature-->
         <!-- <li><a href="/session">Session</a></li>
         <li class="nav--my-session"></li> -->   
@@ -112,7 +153,7 @@
   <!--Header-->
   <div id="home" class="bg_pos section scrollspy">
     
-    <!--text part-->
+    <!--Header Content-->
     <div style="padding-top: 30px" class="container container-height">
     
       <h1 class="white-text head-text">Tech Invasion 2018</h1>
@@ -126,7 +167,7 @@
                   <div class="valign-wrapper">
                     <i class="material-icons">place</i> <b>Địa điểm tổ chức: </b>
                   </div>
-                  <div class="body">Đại học Greenwich, Hà Nội, Việt Nam</div>
+                  <div class="body">Đại học Greenwich - Tòa nhà Detech Tower Số 8 Tôn Thất Thuyết - Cầu Giấy - Hà Nội</div>
                 </div> 
                 
               </li>
@@ -135,7 +176,7 @@
                   <div class="valign-wrapper">
                     <i class="material-icons">timer</i> <b>Thời gian: </b>
                   </div>
-                  <div class="body">12h30 - 17h10 (9/9/1018)</div>
+                  <div class="body">Chủ Nhật 9/9/2018, 12h30 - 17h10</div>
                 </div>
               </li>
               <li>
@@ -144,7 +185,7 @@
                     <i class="material-icons">assignment</i> <b>Link đăng ký: </b>
                   </div>
                   <div class="body">
-                    <a href="http://bit.ly/vietcode-tech-invasion-2018">Google Form</a>
+                    <a class="btn-signup btn-large pink darken-4" target="_blank" href="http://bit.ly/vietcode-tech-invasion-2018">Google Form</a>
                   </div>
                   
                 </div>
@@ -194,7 +235,7 @@
       <div class="">
 
         <div class="section-heading"> 
-          <p><i class="medium material-icons" style="color: #de4d2f">insert_chart</i></p>
+          <p><i class="medium material-icons" style="color: #ad1457">insert_chart</i></p>
           <h3>Về sự kiện</h3>
         </div>
 
@@ -216,114 +257,192 @@
 
   </div>
 
+  <!-- Feature -->
+
+  <div id="feature" class="container feature section scrollspy">
+    <div class="row">
+      <div class="section-heading">   
+        <p><i class="medium material-icons" style="color: #ad1457">child_care</i></p>      
+        <h3>Tại sao bạn không thể bỏ lỡ Tech Invasion?</h3>
+      </div>
+    </div>
+    <div class="row center-align">
+      <div class="col s12 m4">
+        <h5>Chủ đề đa dạng và thực tế</h5>
+        <p>Tech Invasion 2018 mang đến cho người tham gia <b>8 nội dung (sessions)</b> vô cùng hấp dẫn về nhiều lĩnh vực thực tế trong ngành CNTT như: công nghệ tài chính, thương mại điện tử, ngành công nghiệp giải trí,...</p>
+      </div>
+      <div class="col s12 m4">
+        <h5>Diễn giả có chuyên môn cao</h5>
+        <p>Các khách mời của Tech Invasion 2018 đều là <b>chuyên gia của các công ty startup, công ty công nghệ hàng đầu</b>. Họ có kiến thức chuyên môn cao, và biết cách truyền tải ý tưởng của mình trơn tru và hoàn hảo.</p>
+      </div>
+      <div class="col s12 m4">
+        <h5>Booth trải nghiệm sản phẩm công nghệ</h5>
+        <p>Đến với Tech Invasion, bạn sẽ được tham quan và trải nghiệm MIỄN PHÍ những công nghệ mới lạ như VR/AR, Computer Vision, IOT, ... từ các booth khách mời.</p>
+      </div>
+    </div>
+  </div>
+
   <!--Schedule-->
-  <hr>
-  <br>
   <div id="schedule" class="container schedule scrollspy">
     <div class="section-heading"> 
-      <p><i class="medium material-icons" style="color: #de4d2f">event_note</i></p>
-      <h3>Lịch trình diễn ra sự kiện</h3>
+      <p><i class="medium material-icons" style="color: #ad1457">event_note</i></p>
+      <h3>Lịch trình diễn ra sự kiện</h3>      
+    </div>
 
-      <ul class="collapsible schedule-table">
-          <li>
-            <div class="collapsible-header"><i class="material-icons">place</i>12h30 - 13h00 </div>
-            <div class="collapsible-body"><span>Khai mạc, Check-in, Giới thiệu nhà tài trợ </span></div>
-          </li>
+    <table class="centered">
+      <col width="25%">
+      <col width="75%">  
+      <thead class="center-align">
+        <tr class="center-align">
+            <th class="center-align">Thời gian</th>
+            <th class="center-align">Session</th>
+        </tr>
+      </thead>
 
-          <li>
-            <div class="collapsible-header"><i class="material-icons">note</i>13h00 - 13h15 </div>
-            <div class="collapsible-body"><span>Keynote sự kiện </span></div>
-          </li>
+      <tbody>
 
-          <li>
-            <div class="collapsible-header"><i class="material-icons">whatshot</i>13h20 - 14h05 </div>
-            <div class="collapsible-body">
-              <p>Phòng 1: Entertainment</p>
-              <p>Phòng 2: Fintech  </p>
+        <tr>
+          <td class="other">12h30 - 13h00</td>
+          <td>
+            <div>
+              <h5>Khai mạc, Check-in, Giới thiệu nhà tài trợ</h5>
             </div>
-          </li>
+          </td>
+        </tr>
 
-          <li>
-            <div class="collapsible-header"><i class="material-icons">whatshot</i>14h10 - 14h55 </div>
-            <div class="collapsible-body">
-              <p>Phòng 1: Business </p>
-              <p>Phòng 2: On-demand  </p>
+        <tr>
+          <td class="other">13h00 - 13h15</td>
+          <td>
+            <div>
+              <h5>Keynote sự kiện</h5>
             </div>
-          </li>
-
-          <li>
-            <div class="collapsible-header"><i class="material-icons">sentiment_very_satisfied</i>15h00 - 15h15 </div>
-            <div class="collapsible-body"><span>Tea-break</span></div>
-          </li>
-
-          <li>
-            <div class="collapsible-header"><i class="material-icons">whatshot</i>15h20 - 16h05 </div>
-            <div class="collapsible-body">
-                <p>Phòng 1: Healthcare </p>
-                <p>Phòng 2: Social  </p>
-            </div>
-          </li>
-
-          <li>
-            <div class="collapsible-header"><i class="material-icons">whatshot</i>16h10 - 16h55 </div>
-            <div class="collapsible-body">
-                <p>Phòng 1: eCommerce </p>
-                <p>Phòng 2: Hardware </p>
-            </div>
-          </li>
-
-          <li>
-            <div class="collapsible-header"><i class="material-icons">event_available</i>17h00 - 17h10 </div>
-            <div class="collapsible-body"><span>Bế mạc Hội thảo Tech Invasion 2018</span></div>
-          </li>
-        </ul>
-
+          </td>
+        </tr>
         
+        <tr>
+          <td class="session" rowspan="2">13h20 - 14h05</td>
+          <td class="room1">
+            <div>
+              <h5>Phòng 1: Entertainment</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="room2">
+            <div>
+              <h5>Phòng 2: Fintech</h5>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="session" rowspan="2">14h10 - 14h55</td>
+          <td class="room1">
+            <div>
+              <h5>Phòng 1: Business</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="room2">
+            <div>
+              <h5>Phòng 2: On-demand</h5>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="other">15h00 - 15h15</td>
+          <td>
+            <div>
+              <h5>Teabreak</h5>
+            </div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td class="session" rowspan="2">15h20 - 16h05</td>
+          <td class="room1">
+            <div>
+              <h5>Phòng 1: Healthcare</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="room2">
+            <div>
+              <h5>Phòng 2: Social</h5>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="session" rowspan="2">16h10 - 16h55</td>
+          <td class="room1">
+            <div>
+              <h5>Phòng 1: eCommerce</h5>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="room2">
+            <div>
+              <h5>Phòng 2: Hardware</h5>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="other">17h00 - 17h10</td>
+          <td>
+            <div>
+              <h5>Bế mạc Hội thảo Tech Invasion 2018</h5>
+            </div>
+          </td>
+        </tr>
+        
+        
+      </tbody>
+    </table>
+
+           
     </div>
   </div>
 
   <!--Sponsor-->
-  <hr>
+  <!-- <hr>
   <div id="sponsor" class="container sponsor-style scrollspy">
     <h3>Nhà tài trợ</h3>
     <div class="row">
       <div class="col s3">
-        <p><img src="img/tecjkids.png"></p>
+        <img class="" src="img/tecjkids.png">
       </div>
-      <!--
-      <div class="col s3">
-        <p><img src="img/logo-microsoft.png"></p>
-        <p>Sponsor 2</p>
-      </div>
-
-      <div class="col s3">
-        <p><img src="img/logo-mozilla.png"></p>
-        <p>Sponsor 3</p>
-      </div>
-
-      <div class="col s3">
-        <p><img src="img/logo-microsoft.png"></p>
-        <p>Sponsor 4</p>
-      </div>
-      -->
+      
     </div>
-  </div>
+  </div> -->
 
   <!--footer-->
-  <footer class="page-footer cyan darken-1">
+  <footer class="page-footer pink darken-3">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12 m7">
-          <h5 class="white-text">Vietcode Project</h5>
-          <p class="grey-text text-lighten-4 footer-align">
-            We are a team of high school students working on this project like it's our full time job. 
-            Any amount would help support and continue development on this project and is greatly appreciated.
-          </p>
+        <div class="col l7 s12 m7">
+          <h5 class="white-text">Vietcode</h5>
+          <ul>
+            <li>Website: <a style="text-decoration: underline;" class="white-text" href="https://vietcode.org">vietcode.org</a></li>
+            <li>Email: <a style="text-decoration: underline;" class="white-text" href="mailto:vietcodeproject@gmail.com">vietcodeproject@gmail.com</a></li>
+            <li>Hotline: 
+            <ul style="padding-left: 2rem">
+              <li>0123 968 4434 (Tiến Anh)</li>
+              <li>0128 806 1196 (Duy Hiếu)</li>
+            </ul>
+          </li>
+          </ul>
 
         </div>
         
-        <div class="col l3 s12 m5">
-          <h5 class="white-text">Kết nối</h5>
+        <div class="col l5 s12 m5">
+          <h5 class="white-text">Facebook</h5>
           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvietcode.org%2F&tabs=timeline&width=300&height=350&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
@@ -331,7 +450,7 @@
     <div class="footer-copyright">
       <div class="container">
       <!--Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>-->
-      Made by <a class="orange-text text-lighten-3" href="https://vietcode.org">Vietcode Project</a>
+      Made by <a class="orange-text text-lighten-3" href="https://vietcode.org">Vietcode Team</a>
       </div>
     </div>
   </footer>
