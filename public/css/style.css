@@ -246,13 +246,6 @@ strong
   text-align: center;
 }
 
-.sponsor-style img
-{
-  width: 15vw;
-  height: auto;
-  margin: 0 auto;
-}
-
 /*some media query*/
 @media only screen and (max-width: 720px)
 {

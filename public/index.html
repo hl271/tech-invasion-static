@@ -75,29 +75,41 @@
 
     /* Schedule Table */
     table, th, td {
-      border: 1px solid #9e9e9e;
+      border: 1px solid #eee;
     }
 
     table {
       border-collapse: collapse;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      box-shadow: 8px 8px 6px #eee;
     }
     
     th {
       background-color: #ad1457 ;
       color: white;
+      font-size: 1.5rem;
     }
 
     td {
-      background-color: #e0f7fa
+      background-color: #b2ebf2
     }
 
     .session {
-      background-color: #006064;
+      background-color: #0097a7;
       color: #fff;
     }
     .other {
       background-color: #0097a7;
       color: white;
+    }
+    .room1, .room2 {
+      color: #fff;
+      font-weight: 500;
+      background-color: #006064;
+    }
+    .room1 h5, .room2 h5 {
+      color: #fff;
     }
   </style>
 
@@ -290,12 +302,13 @@
     </div>
 
     <table class="centered">
-      <col width="25%">
-      <col width="75%">  
+      <col width="24%">
+      <col width="38%">  
+      <col width="38%">  
       <thead class="center-align">
         <tr class="center-align">
             <th class="center-align">Thời gian</th>
-            <th class="center-align">Session</th>
+            <th colspan="2" class="center-align">Session</th>
         </tr>
       </thead>
 
@@ -303,101 +316,102 @@
 
         <tr>
           <td class="other">12h30 - 13h00</td>
-          <td>
+          <td colspan="2">
             <div>
-              <h5>Khai mạc, Check-in, Giới thiệu nhà tài trợ</h5>
+              <h4>Khai mạc, Check-in, Giới thiệu nhà tài trợ</h4>
             </div>
           </td>
         </tr>
 
         <tr>
           <td class="other">13h00 - 13h15</td>
-          <td>
+          <td colspan="2">
             <div>
-              <h5>Keynote sự kiện</h5>
+              <h4>Keynote sự kiện</h4>
             </div>
           </td>
         </tr>
         
         <tr>
-          <td class="session" rowspan="2">13h20 - 14h05</td>
+          <td rowspan="2" class="session">13h20 - 14h05</td>
           <td class="room1">
-            <div>
-              <h5>Phòng 1: Entertainment</h5>
-            </div>
+            <h5>Phòng 1</h5>
+          </td>
+          <td class="room2">
+            <h5>Phòng 2</h5>
           </td>
         </tr>
         <tr>
-          <td class="room2">
-            <div>
-              <h5>Phòng 2: Fintech</h5>
+          <td>
+            <div>                  
+              <h5><b>Edtech (Công nghệ giáo dục)</b></h5>
+            </div>
+          </td>
+          <td>
+            <div>              
+              <h5><b>On-demand (Dịch vụ theo yêu cầu)</b></h5>
             </div>
           </td>
         </tr>
 
         <tr>
-          <td class="session" rowspan="2">14h10 - 14h55</td>
+          <td rowspan="2" class="session">13h20 - 14h05</td>
           <td class="room1">
-            <div>
-              <h5>Phòng 1: Business</h5>
-            </div>
+            <h5>Phòng 1</h5>
+          </td>
+          <td class="room2">
+            <h5>Phòng 2</h5>
           </td>
         </tr>
         <tr>
-          <td class="room2">
-            <div>
-              <h5>Phòng 2: On-demand</h5>
+          <td>
+            <div>                  
+              <h5><b>Fintech (Công nghệ tài chính)</b></h5>
+            </div>
+          </td>
+          <td>
+            <div>              
+              <h5><b>eCommerce (Thương mại điện tử)</b></h5>
             </div>
           </td>
         </tr>
-
+              
         <tr>
           <td class="other">15h00 - 15h15</td>
-          <td>
+          <td colspan="2">
             <div>
-              <h5>Teabreak</h5>
+              <h4>Teabreak</h4>
             </div>
           </td>
-        </tr>
+        </tr>                
         
-
         <tr>
-          <td class="session" rowspan="2">15h20 - 16h05</td>
+          <td rowspan="2" class="session">13h20 - 14h05</td>
           <td class="room1">
-            <div>
-              <h5>Phòng 1: Healthcare</h5>
-            </div>
+            <h5>Phòng 1</h5>
           </td>
-        </tr>
-        <tr>
           <td class="room2">
-            <div>
-              <h5>Phòng 2: Social</h5>
-            </div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="session" rowspan="2">16h10 - 16h55</td>
-          <td class="room1">
-            <div>
-              <h5>Phòng 1: eCommerce</h5>
-            </div>
+            <h5>Phòng 2</h5>
           </td>
         </tr>
         <tr>
-          <td class="room2">
-            <div>
-              <h5>Phòng 2: Hardware</h5>
+          <td>
+            <div>                  
+              <h5><b>Social (Ứng dụng xã hội)</b></h5>
+            </div>
+          </td>
+          <td>
+            <div>              
+              <h5><b>Entertain-ment (Giải trí)</b></h5>
             </div>
           </td>
         </tr>
 
         <tr>
           <td class="other">17h00 - 17h10</td>
-          <td>
+          <td colspan="2">
             <div>
-              <h5>Bế mạc Hội thảo Tech Invasion 2018</h5>
+              <h4>Bế mạc Hội thảo Tech Invasion 2018</h4>
             </div>
           </td>
         </tr>
@@ -411,19 +425,24 @@
   </div>
 
   <!--Sponsor-->
-  <!-- <hr>
-  <div id="sponsor" class="container sponsor-style scrollspy">
+  <!-- <div id="sponsor" class="container sponsor-style">
     <h3>Nhà tài trợ</h3>
-    <div class="row">
-      <div class="col s3">
-        <img class="" src="img/tecjkids.png">
+    <div class="row center-align">
+      <div style="margin-bottom: 15px;" class="col s12 m4">
+        <img class="responsive-img" src="img/techkids-logo.png">
+      </div>
+      <div style="margin-bottom: 15px;" class="col s12 m4">
+        <img class="responsive-img" src="img/gdg-logo.png">
+      </div>
+      <div style="margin-bottom: 15px;" class="col s12 m4">
+        <img class="responsive-img" src="img/J2TeaM-logo.jpg">
       </div>
       
     </div>
   </div> -->
 
   <!--footer-->
-  <footer class="page-footer pink darken-3">
+  <footer class="page-footer cyan darken-3">
     <div class="container">
       <div class="row">
         <div class="col l7 s12 m7">
